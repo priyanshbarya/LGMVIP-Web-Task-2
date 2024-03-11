@@ -1,0 +1,11 @@
+.home-heading{
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 1.5rem;
+}
+.home-heading p{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+}

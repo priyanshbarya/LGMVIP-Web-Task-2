@@ -4,6 +4,7 @@ import Usercard from "../components/Usercard";
 import "../styles/Users.css";
 import axios from "axios";
 import { Bars } from 'react-loader-spinner';
+import Footer from "../components/Footer";
 
 const Users = () => {
   const [userDetails, setUserDetails] = useState({});
@@ -51,7 +52,7 @@ const Users = () => {
         })):(<p className="user-data-empty">*No Data Available</p>)}
       </div>
       }
-      
+      <Footer/>
     </div>
   );
 };

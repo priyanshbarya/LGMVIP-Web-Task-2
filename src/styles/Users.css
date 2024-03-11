@@ -11,6 +11,7 @@
 }
 .users-container{
     max-width: 1400px;
+    min-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto;
