@@ -8,10 +8,12 @@ const Home = () => {
   return (
     <div className="home-container">
       <NavBar />
-      <div className="home-heading">
-        <p>Regarding Project</p>
+      <div>
+        <div className="home-heading">
+          <p>Regarding Project</p>
+        </div>
+        <HeroContent />
       </div>
-      <HeroContent />
       <Footer />
     </div>
   );

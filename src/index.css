@@ -23,6 +23,7 @@ ul{
 }
 body::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 button:hover{
   box-shadow: 0px 0px 3px 3px rgba(66,133,244,0.3);
