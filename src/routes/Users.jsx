@@ -3,11 +3,14 @@ import NavBar from "../components/NavBar";
 import Usercard from "../components/Usercard";
 import "../styles/Users.css";
 import axios from "axios";
+import { Bars } from 'react-loader-spinner';
 
 const Users = () => {
   const [userDetails, setUserDetails] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       try {
         const response = axios.get("https://reqres.in/api/users?page=1");
@@ -17,7 +20,8 @@ const Users = () => {
       }
     };
     fetchData();
-  }, [userDetails]);
+    setLoading(false);
+  }, [userDetails,loading]);
 
   return (
     <div>
@@ -25,7 +29,17 @@ const Users = () => {
       <div className="users-handing">
         <p>Users Data</p>
       </div>
-      <div className="users-container">
+      {
+        loading?<Bars
+        height="80"
+        width="80"
+        color="#4fa94d"
+        ariaLabel="bars-loading"
+        wrapperStyle={{ "justify-content": "center"}}
+        wrapperClass=""
+        visible={true}
+        />:
+        <div className="users-container">
         {userDetails.length?(userDetails.map((e) => {
           return (
             <Usercard
@@ -36,6 +50,8 @@ const Users = () => {
           );
         })):(<p className="user-data-empty">*No Data Available</p>)}
       </div>
+      }
+      
     </div>
   );
 };
