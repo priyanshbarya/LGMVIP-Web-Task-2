@@ -1,0 +1,55 @@
+.users-handing {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+.users-handing p{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+}
+.users-container{
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
+.user-details{
+    display: flex;
+    background-color: rgb(67 71 75);
+    box-shadow: 5px 5px 30px 5px #9b999959;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.user-avatar{
+    margin-right: 1.2rem;
+    border: 4px black solid;
+    border-radius: 6px;
+}
+.user-avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+
+}
+.user-cred{
+    display: flex;
+    font-family: "Alata", sans-serif;
+    font-style: normal;
+}
+.user-cred p:first-child{
+    font-weight: 800;
+    margin-right: 6px;
+}
+.user-data-empty{
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}

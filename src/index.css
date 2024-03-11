@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Russo+One&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background:black;
+}
+h1,h4,p,a{
+  color: white;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+button:hover{
+  box-shadow: 0px 0px 3px 3px rgba(66,133,244,0.3);
+  transition: 0.218s;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(105, 104, 104);
+  border-radius: 100px;
+}
