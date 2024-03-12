@@ -2,6 +2,9 @@
 
 This project is a homepage developed using ReactJS, HTML, and CSS. The primary feature of this homepage is a button that retrieves user data from an API upon clicking.
 
+## Link to hosting platform
+    https://lgmvip-web-task-2-nine.vercel.app/
+
 ## Features
 - **API Integration:** Utilizes an API to fetch user data dynamically.
 - **Interactive Button:** Allows users to trigger the API request with a simple click.
