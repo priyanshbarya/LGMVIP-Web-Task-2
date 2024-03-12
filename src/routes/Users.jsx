@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Users = () => {
   const [userDetails, setUserDetails] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
@@ -25,7 +25,7 @@ const Users = () => {
   }, [userDetails,loading]);
 
   return (
-    <div>
+    <div className='users'>
       <NavBar />
       <div className="users-handing">
         <p>Users Data</p>
@@ -40,7 +40,7 @@ const Users = () => {
         wrapperClass=""
         visible={true}
         />:
-        <div className="users-container">
+        (<div className="users-container">
         {userDetails.length?(userDetails.map((e) => {
           return (
             <Usercard
@@ -50,7 +50,7 @@ const Users = () => {
             />
           );
         })):(<p className="user-data-empty">*No Data Available</p>)}
-      </div>
+      </div>)
       }
       <Footer/>
     </div>
